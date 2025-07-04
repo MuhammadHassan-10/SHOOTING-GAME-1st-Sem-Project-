@@ -128,11 +128,8 @@ Download and configure Raylib in your IDE.
 In your project file:
 
 Include the raylib header:
-
-c
-Copy
-Edit
 #include "raylib.h"
+
 Build and run the project — enjoy the game!
 
 ✅ Final Notes
