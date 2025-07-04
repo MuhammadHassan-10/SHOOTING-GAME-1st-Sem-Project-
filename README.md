@@ -1,5 +1,6 @@
 # SHOOTING-GAME-1st-Sem-Project-
 🎯 2D SHOOTING GAME
+
 👨‍💻 Developed By
 Muhammad Hassan
 
@@ -13,6 +14,7 @@ Iqrar Ur Rehman
 This project is a fast-paced 2D shooting game designed to test your accuracy, reflexes, and strategic skills. With progressive difficulty, randomized challenges, and interactive audio-visual effects, it keeps players engaged through escalating levels and varied gameplay. Each level is more challenging than the last, rewarding player mastery while offering a satisfying and replayable experience.
 
 🧩 Key Features
+
 🔫 Player Controls
 Move left and right using arrow keys.
 
