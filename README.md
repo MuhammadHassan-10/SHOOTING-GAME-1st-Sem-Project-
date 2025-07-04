@@ -1,150 +1,150 @@
 # SHOOTING-GAME-1st-Sem-Project-
-🎯 2D SHOOTING GAME
+# 🎯 2D Shooting Game
 
-👨‍💻 Developed By
-Muhammad Hassan
+## 👨‍💻 Developed By
 
-Asif Ali Ansaree
+- **Muhammad Hassan**  
+- **Asif Ali Ansaree**  
+- **Dawood Akbar**  
+- **Iqrar Ur Rehman**
 
-Dawood Akbar
+---
 
-Iqrar Ur Rehman
+## 🎮 Project Overview
 
-🎮 Project Overview
-This project is a fast-paced 2D shooting game designed to test your accuracy, reflexes, and strategic skills. With progressive difficulty, randomized challenges, and interactive audio-visual effects, it keeps players engaged through escalating levels and varied gameplay. Each level is more challenging than the last, rewarding player mastery while offering a satisfying and replayable experience.
+This project is a fast-paced 2D shooting game designed to test your **accuracy**, **reflexes**, and **strategic skills**. With **progressive difficulty**, **randomized challenges**, and **interactive audio-visual effects**, it keeps players engaged through escalating levels and varied gameplay. Each level becomes more challenging, rewarding player mastery while offering a satisfying and replayable experience.
 
-🧩 Key Features
+---
 
-🔫 Player Controls
-Move left and right using arrow keys.
+## 🧩 Key Features
 
-Press spacebar to shoot bullets.
+### 🔫 Player Controls
 
-🎯 Target & Obstacle System
-Green targets descend randomly — shoot them to score points.
+- Move **left** and **right** using arrow keys.  
+- Press **spacebar** to shoot bullets.
 
-Gray stones reduce your score if hit — avoid or dodge them.
+### 🎯 Target & Obstacle System
 
-⚙️ Difficulty Modes
-Choose between Easy, Medium, or Hard.
+- **Green targets** descend randomly — shoot them to score points.  
+- **Gray stones** reduce your score if hit — avoid or dodge them.
 
-Difficulty affects spawn rate, object speed, and score targets.
+### ⚙️ Difficulty Modes
 
-🆙 Level Progression
-Every level has a score target and time limit.
+- Choose between **Easy**, **Medium**, or **Hard**.  
+- Difficulty affects **spawn rate**, **object speed**, and **score targets**.
 
-Progress to the next level by achieving the target within the time.
+### 🆙 Level Progression
 
-⏱️ Timer System
-Countdown timer controls the time available for each level.
+- Each level includes a **time limit** and **target score**.  
+- Progress to the next level by achieving the score within the time.
 
-At timeout, the game checks for win/loss conditions.
+### ⏱️ Timer System
 
-🔊 Visual & Audio Feedback
-Includes sound effects for shooting, hits, and collisions.
+- Countdown timer tracks remaining level time.  
+- Game evaluates **win/loss condition** once the timer ends.
 
-Real-time visuals display score, timer, and target status.
+### 🔊 Visual & Audio Feedback
 
-🔁 Retry & Endgame System
-Players can retry if they fail a level.
+- **Sound effects** for shooting, hitting targets, and collisions.  
+- Visuals include background image, score, timer, and target indicators.
 
-Displays custom win/loss messages with options to replay or quit.
+### 🔁 Retry & Endgame System
 
-🎲 Randomized Gameplay
-Random spawn locations and timings keep gameplay fresh and unpredictable.
+- Retry a level if time runs out or the score target isn't met.  
+- Displays **win/loss messages** with options to **replay or quit**.
 
-📈 Progressive Difficulty
-As levels advance, gameplay gets faster and more complex.
+### 🎲 Randomized Gameplay
 
-🧭 User-Friendly Interface
-Clear menus and instructions to guide players before gameplay.
+- Random **spawn positions** and **timing** of targets and obstacles.
 
-🧱 Game Architecture
-🔧 Core Modules Breakdown
-1. Game Initialization
-Sets up the game window, textures, and audio.
+### 📈 Progressive Difficulty
 
-Loads resources and prepares game state variables.
+- Speed and complexity of descending objects increase with levels.
 
-2. Input Handling
-Captures keyboard input for movement and shooting.
+### 🧭 User-Friendly Interface
 
-Updates player position and spawns bullets accordingly.
+- Clear **menus** and **instructions** guide players at each stage.
 
-3. Game Object Management
-Controls bullets, targets, and obstacles.
+---
 
-Manages spawning, updating, and deactivation.
+## 🧱 Game Architecture
 
-4. Collision Detection
-Detects interactions between bullets, targets, and obstacles.
+### 🔧 Core Modules
 
-Triggers score updates and object state changes.
+#### 1. Game Initialization
 
-5. Scoring System
-Tracks player score dynamically.
+- Initializes game window, textures, and audio.
+- Loads all required resources.
+- Sets up initial variables and game state.
 
-Increments for targets hit, decrements for stone collisions.
+#### 2. Input Handling
 
-6. Timer & Level Logic
-Monitors time remaining.
+- Captures player keyboard input.
+- Controls movement and shooting.
+- Updates player position and spawns bullets.
 
-Determines level outcome based on time and score.
+#### 3. Game Object Management
 
-7. UI Rendering
-Renders player, bullets, and objects.
+- Manages **bullets**, **targets**, and **obstacles**.
+- Handles spawning, updating, and deactivation of objects.
 
-Displays score, timer, and messages clearly on screen.
+#### 4. Collision Detection
 
-8. Audio System
-Plays context-sensitive sounds: shooting, hitting, collision, etc.
+- Detects collisions between objects.
+- Updates object states and scoring logic based on outcomes.
 
-9. Main Game Loop
-The heart of the program.
+#### 5. Scoring System
 
-Continuously updates all modules and renders the game in real-time.
+- Tracks the player’s score dynamically.
+- Adds points for hitting targets and subtracts for hitting stones.
 
-🔄 Module Interactions Diagram
-Initialization Module → Prepares resources for the game loop.
+#### 6. Timer & Level Logic
 
-Input Module → Triggers changes in player position and shooting.
+- Monitors time for each level.
+- Determines **win/loss conditions** based on score and timer.
 
-Object Manager ↔ Collision & Scoring Modules → Handle interactions and scoring.
+#### 7. UI Rendering
 
-Timer Module → Signals the end of a level to the main loop.
+- Renders bullets, players, targets, and game text.
+- Displays current score, timer, and end-game messages.
+- Shows initial menu and difficulty selection screen.
 
-Audio & UI Modules → React to in-game events for user feedback.
+#### 8. Audio System
 
-🚀 How to Run the Game
-Requirements:
-Visual Studio or Visual Studio Code
+- Plays sounds for shooting, hits, and obstacles.
 
-Raylib Library
+#### 9. Game Loop
 
-Setup Instructions:
-Download and configure Raylib in your IDE.
-(You can find setup guides for your system by searching "Raylib setup for Visual Studio/VSCode").
+- Central loop connecting all modules.
+- Updates game state continuously and handles rendering.
 
-In your project file:
+---
 
-Include the raylib header:
-#include "raylib.h"
+### 🔄 Module Interaction Flow
 
-Build and run the project — enjoy the game!
+- **Initialization Module** → Sets up assets and passes them to Game Loop.  
+- **Input Module** → Controls player actions and interacts with Object Manager.  
+- **Object Manager** ↔ **Collision Detector** → Handles object updates and interactions.  
+- **Scoring Module** → Communicates with UI to update score.  
+- **Timer Module** → Notifies Game Loop of level completion state.  
+- **Audio System** → Triggered by gameplay events like shooting and collisions.  
+- **UI Module** → Displays all feedback and instructions to the player.
 
-✅ Final Notes
-This 2D Shooting Game is an excellent demonstration of game development fundamentals such as:
+---
 
-Real-time user input handling
+## 🚀 How to Run the Game
 
-Sprite rendering
+### 🧰 Requirements
 
-Object-oriented modular architecture
+- **Visual Studio** or **Visual Studio Code**
+- **Raylib Library**
 
-Collision and score logic
+### 🛠 Setup Instructions
 
-Sound integration
+1. Download and install **Raylib** for your operating system.  
+   Search: `Raylib setup for Visual Studio` or `Raylib VSCode setup`.
 
-Difficulty scaling and level design
+2. Create a C/C++ project and include the Raylib header:
 
-Whether you're a casual gamer or an aspiring developer, this project offers both fun and insights into game mechanics!
+   ```c
+   #include "raylib.h"
